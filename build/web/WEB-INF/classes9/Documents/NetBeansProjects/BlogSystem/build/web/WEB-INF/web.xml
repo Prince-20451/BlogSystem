@@ -1,0 +1,29 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>HomeServlet</servlet-name>
+        <servlet-class>com.blog.HomeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HomeServlet</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+
+    <!-- ❌ Remove TestDBServlet from web.xml if using @WebServlet annotation -->
+    
+    <servlet>
+    <servlet-name>AddPostServlet</servlet-name>
+    <servlet-class>com.blog.servlets.AddPostServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>AddPostServlet</servlet-name>
+    <url-pattern>/AddPostServlet</url-pattern>
+</servlet-mapping>
+
+
+
+
+</web-app>
